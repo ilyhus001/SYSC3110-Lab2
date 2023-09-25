@@ -20,12 +20,16 @@ public class AddressBook {
         return null;
     }
 
+    public void printMessage() {
+        System.out.println("Completed Lab 3!");
+    }
+
     public static void main(String[] args) {
         BuddyInfo buddy = new BuddyInfo("Tom", "Carleton", "613");
         AddressBook addressBook = new AddressBook();
         addressBook.addBuddy(buddy);
         addressBook.removeBuddy(0);
-        System.out.println("Completed Lab 3!");
+        addressBook.printMessage();
     }
 
 }
